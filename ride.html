@@ -88,7 +88,25 @@
             </div>
         </div>
     </div>
+    <script>
+	const data = null;
 
+	const xhr = new XMLHttpRequest();
+	xhr.withCredentials = true;
+
+	xhr.addEventListener('readystatechange', function () {
+		if (this.readyState === this.DONE) {
+			console.log(this.responseText);
+		}
+	});
+
+	xhr.open('GET', 'https://distance-calculator.p.rapidapi.com/distance/simple?lat_1=47.373535&long_1=8.541109&lat_2=42.335321&long_2=-71.023516&unit=miles&decimal_places=2');
+	xhr.setRequestHeader('Content-Type', 'application/json');
+	xhr.setRequestHeader('X-RapidAPI-Key', '29f8b12035msh5872cfa40f2b860p194015jsn1793c2231c42');
+	xhr.setRequestHeader('X-RapidAPI-Host', 'distance-calculator.p.rapidapi.com');
+
+	xhr.send(data);
+    </script>
     <script src="js/vendor/jquery-3.1.0.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/aws-cognito-sdk.min.js"></script>
