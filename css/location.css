@@ -1,0 +1,19 @@
+<div class="gallery">
+  <a href="/peter.html">
+    <img src="bill.png" alt="Peter" class="peter" data-name="peter">
+  </a>
+  <a href="/ray.html">
+    <img src="ray.png" alt="Ray" class="ray" data-name="ray">
+  </a>
+  <a href="/egon.html">
+    <img src="egon.png" alt="Egon" class="egon" data-name="egon">
+  </a>
+  <a href="/winston.html">
+    <img src="winston.png" alt="Winston" class="winston" data-name="winston">
+  </a>
+</div>
+
+<p class="selected">Ghostbusters</p>
+<p class="highlight"></p>
+
+<div class="content"></div>
