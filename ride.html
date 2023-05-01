@@ -39,24 +39,7 @@
                 <li>Welcome! Click the map to set your pickup location.</li>
             </ol>
         </div>
-    </div>
-    <script>
-    const settings = {
-	async: true,
-	crossDomain: true,
-	url: 'https://distance-calculator.p.rapidapi.com/distance/simple?lat_1=47.373535&long_1=8.541109&lat_2=42.335321&long_2=-71.023516&unit=miles&decimal_places=2',
-	method: 'GET',
-	headers: {
-		'Content-Type': 'application/json',
-		'X-RapidAPI-Key': '29f8b12035msh5872cfa40f2b860p194015jsn1793c2231c42',
-		'X-RapidAPI-Host': 'distance-calculator.p.rapidapi.com'
-	}
-    };
-
-    $.ajax(settings).done(function (response) {
-	console.log(response);
-    });
-    </script>
+	</div>
 
     <div id="noApiMessage" class="configMessage" style="display: none;">
         <div class="backdrop"></div>
@@ -115,6 +98,7 @@
     <script src="js/cognito-auth.js"></script>
     <script src="js/esri-map.js"></script>
     <script src="js/ride.js"></script>
+    <script src="js/distance.js"></script>
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
             integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
             crossorigin=""></script>
